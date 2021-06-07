@@ -3,3 +3,15 @@ werkzeug>=1,<2
 flask-session~=0.3.2
 requests>=2,<3
 msal>=1.7,<2
+GDAL==3.3.0
+Fiona==1.8.20
+pyproj==3.1.0
+rtree==0.9.7
+shapely==1.7.1
+geopandas==0.9.0
+keplergl==0.2.2
+dash>=1.20.0
+dash-bootstrap-components>=0.12.2
+plotly>=4.14.3
+
+
