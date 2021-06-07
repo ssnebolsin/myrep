@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Хмарні рішення для аналітики та звітності. Приклади рішень </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'styles/styles.css')}}">
+        <link rel="shortcut icon" href="{{ url_for('static',filename='img/favicon.png') }}" type="image/x-icon">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <script type="text/javascript">
+        /*    const callEmbeddedReport = (reportName, targetPage) => {
+                let basicUrl = 'http://127.0.0.1:5000/getReport/';
+                window.open(basicUrl + reportName, targetPage);
+            };
+        */
+            const callEmbeddedReport = (reportName, targetPage) => {
+            let basicUrl = 'getReport/';
+            window.open(basicUrl + reportName, targetPage);
+            };
+
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-left">
+                <a class="header-ks-logo" href="https://kyivstar.ua/uk/business" target="_blank">
+                    <img src="https://cdn.kyivstar.ua/sites/all/themes/kyivstar/build/images/header-logo-dark.svg" alt="">
+                </a>
+
+                <div class="nav-wrapper">
+                    <div class="navlink-wrapper">
+                        <a href="/">Хмарні рішення для аналітики та звітності</a>  
+                    </div>   
+
+                    <div class="navlink-wrapper active-navlink">
+                        <a href="projects">Приклади рішень</a>    
+                    </div>   
+                </div>  
+            </div>
+            
+            <div class="header-right">
+                <a class="ms-logo" href="https://azure.microsoft.com/en-us/" target="_blank">
+                    <img src="static/img/Azure_Logo.png" alt="">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ##########  content ###########  -->
+
+        <div class="content-wrapper">
+            <div class="items-wrapper">
+
+                <div class="item-wrapper smallbox" onclick="callEmbeddedReport('agro', '_blank')" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/agro.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Агро холдинг </h1>
+                        <p>Дата платформа для логістичного підрозділу </p>
+
+
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Проблематика:</h4>
+
+                            <ul>
+                                <li>Низька продуктивність поточної наземної платформи</li>
+                                <li>Складність узгодження даних між системами</li>
+                                <li>Побудова аналітики по логістичному напрямку</li>
+                                <li>Відсутність платформи для розвитку Data Science</li>
+                                <li>Підтвердження гіпотез щодо вартості Azure Cloud</li>
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Міграція Дата Платформи в Azure Cloud </li>
+                                <li>Налаштування автоматичного масштабування платформи</li>
+                                <li>Побудова аналітики в PowerBI</li>
+                            </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="item-wrapper smallbox" onclick="callEmbeddedReport('ats', '_blank')" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/ats.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Мережа магазинів техніки </h1>
+                        <p>Розширення функціоналу платформи АТС </p>
+
+
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Задача:</h4>
+
+                            <ul>
+                                <li>Впровадження додаткового аналітичного модуля для системи АТС</li>
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Хмарна інфраструктура для зберігання та обробки даних</li>
+                                <li>Інтеграція із біллінговими системами Київстар</li>
+                                <li>Побудова аналітики в PowerBI</li>
+                            </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="item-wrapper" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/bank.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Комерційний Банк </h1>
+                        <p>Дата платформа обміну даними</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Задача:</h4>
+
+                            <ul>
+                                <li>Побудувати платформу для обміну даними між Банком та Київстар</li>
+                                <li>Забезпечити високу надійність системи</li>
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Хмарна інфраструктура для обміну зберігання та обробки даних</li>
+                                <li>Налаштований ізольований сегмент мережі</li>
+                                <li>Впроваджені інструменти шифрування та анонімізації даних</li>
+                                <li>Автоматизовано процеси обміну даними</li>
+                            </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="item-wrapper smallbox" onclick="callEmbeddedReport('media', '_blank')" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/media.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Медіа група </h1>
+                        <p>Автоматизація KPIs бізнес-одиниць в Power BI</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Проблематика:</h4>
+
+                            <ul>
+                                <li>Ручний процес побудови P&N</li>
+                                <li>Відсутність моделі даних</li>
+                                <li>Ризик затримок та наявності помилок у фінансовій аналітиці</li>
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Впровадження PowerBI, як основного інструменту для аналітики</li>
+                                <li>Побудова моделі даних у PowerBi</li>
+                                <li>Автоматизація P&L</li>
+                            </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="item-wrapper" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/pharmacy.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Фарм Компанія </h1>
+                        <p>Автоматизація контролю роботи офісних працівників </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Задача:</h4>
+
+                            <ul>
+                                <li>Розробка системи автоматизованого контролю наявності працівника на робочому місці за допомогою Face ID</li>
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Хмарна інфраструктура для обміну зберігання та обробки даних</li>
+                                <li>Використання ML інструментів для розпізнавання обличчя</li>
+                                <li>Автоматичне масштабування платформи в залежності від навантаження</li>
+                            </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="item-wrapper" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/radio.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Радіостанція </h1>
+                        <p>Розпізнавання та аналітика програвання реклами на радіостанціях України</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Задача:</h4>
+
+                            <ul>
+                                <li>Автоматизація прослуховування 25 радіостанцій України</li>
+                                <li>Ідентифікація рекламних роликів за допомогою Voice Recognition</li>
+                                <li>Побудова аналітики</li>
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Хмарна інфраструктура для зберігання та обробки даних</li>
+                                <li>Використання ML інструментів для розпізнавання радіоефіру</li>
+                                <li>Автоматичне масштабування платформи в залежності від навантаження</li>
+                            </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="item-wrapper smallbox" onclick="callEmbeddedReport('customerProfile', '_blank')" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/retail.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Retail компанія з продажу техніки </h1>
+                        <p>Побудова Customer Profile</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Задача:</h4>
+
+                            <ul>
+                                <li>Впровадження платформи, що забезпечить отримання повного уявлення про клієнта (Customer Profile 360)</li>
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Розроблено прототип системи, створена уніфікована модель даних</li>
+                                <li>Розроблена візуалізація Customer Profile із можливістю збагачення даних даними Kyivstar</li>
+                            </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="item-wrapper smallbox" onclick="window.open('https://kyivstar.ua/', '_blank')" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/retail2.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Retail компанія </h1>
+                        <p>Cкладська аналітика в реальному часі</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Задача:</h4>
+
+                            <ul>
+                                <li>Забезпечити збір Realtime даних щодо складської аналітики</li>
+                                <li>Побудувати дашборд  продажів товарів та наявності залишків у реальному часі</li>
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Хмарна інфраструктура для оперативного зберігання та обробки даних</li>
+                                <li>Використання PowerBi для Stream Analytics для відображення статистики у реальному часі</li>
+                            </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="item-wrapper" id='smallbox_t' >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/transportation.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Міська адміністрація </h1>
+                        <p>Аналітична платформа моніторингу транспортної системи міста</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Проблематика:</h4>
+
+                            <ul>
+                                <li>Відсутність інструментів для контролю транспортною системою міста</li>
+                                <li>Відсутність реальних, якісних даних для оцінки проблем міста</li>
+                                <li>Неможливість оцінювання ефективності проваджених змін</li>
+                                <li>Відсутність інструментів прогнозування та інформування населення</li>
+
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Хмарна інфраструктура для зберігання, обробки, візуалізації даних</li>
+                                <li>Автоматизація збору даних</li>
+                                <li>Інтеграція з зовнішніми джерелами (TomTom, Public Transport API's, Kyivstar geo data, Weather data)</li>
+                                <li>Візуалізація даних</li>
+
+                            </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="item-wrapper smallbox" onclick="callEmbeddedReport('sales', '_blank')" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/sales.jpg)"> </div>
+
+                    <div class="title">
+                        <h1>Retail компанія </h1>
+                        <p>Консолідована аналітика продажів </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h4>Задача:</h4>
+
+                            <ul>
+                                <li>Побудувати дашборд  продажів товарів та моніторингу якості роботи торгових точок</li>
+                            </ul>
+                        <h4>Рішення:</h4>
+
+                            <ul>
+                                <li>Впровадження PowerBI, як основного інструменту для аналітики</li>
+                                <li>Побудова моделі даних у PowerBi</li>
+                                <li>Побудова дашборду продажів товару</li>
+                            </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="window">
+            <div class="icon" id='icon'>
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="window-content-wrapper">
+                <div class="item-wrapper smallbox" onclick="window.open('/dashboard/', '_blank')" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/move.jpg)"> </div>
+
+                    <div class="title_w">
+                        <h1>Переміщення населення </h1>
+                        <p>Дашборд переміщення населення у місто Івано-Франківськ </p>
+                    </div>
+                </div>
+
+                <div class="item-wrapper smallbox" onclick="callEmbeddedReport('transport', '_blank')" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/transportsystem.jpg)"> </div>
+
+                    <div class="title_w">
+                        <h1>Аналіз транспортної системи </h1>
+                        <p>Дашборд моніторингу транспортної системи міста Дніпро  </p>
+                    </div>
+                </div>
+
+                <div class="item-wrapper smallbox" onclick="callEmbeddedReport('public_transport', '_blank')" >
+                    <div class="image-item" style="background-image: url(static/img/Images_Projects/publictransport.jpg)"> </div>
+                    
+                    <div class="title_w">
+                        <h1>Моніторинг громадського транспорту  </h1>
+                        <p>Дашборд моніторингу громадського транспорту міста Івано-Франківськ </p>      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+    <script>
+        const imageitems = document.querySelectorAll('.item-wrapper');
+
+        imageitems.forEach(itemwrapper => {
+            itemwrapper.addEventListener('mouseover',() => {
+                itemwrapper.childNodes[1].classList.add('img-darken');
+            })
+            itemwrapper.addEventListener('mouseout',() => {
+                itemwrapper.childNodes[1].classList.remove('img-darken');
+            })
+        })
+
+        document.getElementById("smallbox_t").addEventListener(
+            "click",function(){
+                document.getElementsByClassName("window")[0].classList.add("active");
+        });
+
+        document.getElementById("smallbox_t").addEventListener(
+            "click",function(){
+                document.getElementsByClassName("content-wrapper")[0].classList.add("active");
+        });
+
+        document.getElementById("icon").addEventListener(
+            "click",function(){
+                document.getElementsByClassName("window")[0].classList.remove("active");
+        });
+
+        document.getElementById("icon").addEventListener(
+            "click",function(){
+                document.getElementsByClassName("content-wrapper")[0].classList.remove("active");
+        });
+
+    </script>
+
+
+</html>
