@@ -14,7 +14,7 @@ from dash import Dash
 import dash_core_components as dcc
 import dash_html_components as html
 from keplergl import KeplerGl
-import maps_config
+from maps_config import get_arcs_config, get_routes_config
 
 
 app = Flask(__name__)
@@ -198,7 +198,7 @@ def update_lchart(val):
     [Input('c_dropdown', 'value')]
 )
 def update_html(val):
-    config_arcs = maps_config.Getconfig.get_arcs_config(1, val)
+    config_arcs = get_arcs_config(val)
     KeplerGl().save_to_html(file_name='templates/geoIF_arcs_centroids.html', data={'geodt': df_arcs_centroids},
                             config=config_arcs,
                             read_only=True)
@@ -212,8 +212,10 @@ def update_html(val):
     [Input('c_dropdown', 'value')]
 )
 def update_html_routes(val):
-    config_routes = maps_config.Getconfig.get_routes_config(1, val)
-    KeplerGl().save_to_html(file_name='templates/geoIF_routes.html', data={'geodt': dg2}, config=config_routes, read_only=True)
+    config_routes = get_routes_config(val)
+    KeplerGl().save_to_html(file_name='templates/geoIF_routes.html', data={'geodt': dg2},
+                            config=config_routes,
+                            read_only=True)
     return open('templates/geoIF_routes.html', 'r').read()
 
 
